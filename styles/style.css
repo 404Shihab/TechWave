@@ -386,14 +386,11 @@ nav button {
 }
 
 
-/* =========================
-   CHOOSE SECTION
-========================= */
 
 #choose {
     background-color: #230E3D;
     color: white;
-    padding: 120px 200px; /* FIGMA MATCHED */
+    padding: 120px 200px; /
 }
 
 #choose .section-content {
@@ -410,9 +407,7 @@ nav button {
     text-align: center;
 }
 
-/* =========================
-   GRID
-========================= */
+
 
 #choose .grid-card {
     display: grid;
@@ -420,9 +415,7 @@ nav button {
     gap: 24px;
 }
 
-/* =========================
-   CARD BASE
-========================= */
+
 
 #choose .card {
     background: #2C124F;
@@ -436,9 +429,7 @@ nav button {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
-/* =========================
-   IMAGE & TEXT SPACING
-========================= */
+
 
 #choose .card-img {
     margin-bottom: 16px;
@@ -460,28 +451,22 @@ nav button {
     opacity: 0.9;
 }
 
-/* =========================
-   GRID SPAN (FIGMA LOGIC)
-========================= */
 
-/* Premium Audio Quality */
 #choose .card:nth-child(1) {
     grid-row: span 2;
     padding: 107.5px 40px;
 }
 
-/* Exclusive Interviews */
+
 #choose .card:nth-child(4) {
     grid-column: span 2;
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
+
 
 @media (max-width: 576px) {
     #choose {
-        padding: 120px 24px; /* top-bottom same, side adjusted */
+        padding: 120px 24px; 
     }
 
     #choose .grid-card {
@@ -499,6 +484,211 @@ nav button {
     }
 
     #choose .card:hover {
-        transform: scale(1.03); /* mobile e beshi zoom na */
+        transform: scale(1.03); 
     }
 }
+
+
+
+
+#featured {
+    background: #1a0b2e;
+    padding: 120px 200px;
+    color: #fff;
+}
+
+#featured .featured-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+#featured .episodes
+{
+    margin-bottom: 120px;
+}
+
+#featured .episodes-heading h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+
+
+#featured .episodes-card .vedios {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#featured .episodes-card .vedios li {
+    background: #2C124F;
+    border-radius: 24px;
+    padding: 20px;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#featured .episodes-card .vedios li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+
+
+#featured .episodes-card iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+
+
+#featured .episodes-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+#featured .episodes-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 16px;
+}
+
+
+
+#featured .duration {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+#featured .duration img {
+    width: 16px;
+}
+
+
+
+@media (max-width: 576px) {
+    #featured {
+        padding: 120px 24px;
+    }
+
+    #featured .episodes-card .vedios {
+        flex-direction: column; 
+    }
+
+    #featured .episodes-card iframe {
+        height: 200px;
+    }
+}
+
+
+#featured .host-content {
+
+    padding: 32px;
+}
+
+
+#featured .host-heading h3 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+#featured .host-card {
+    background: #2C124F;
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+
+#featured .host-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+#featured .host-about h4 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+#featured .host-about p {
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 60%;
+    margin-bottom: 16px;
+}
+
+
+#featured .host-social ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#featured .host-social ul li {
+    border: 1px solid rgba(83, 60, 114, 1);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+#featured .host-social ul li:hover 
+{
+    transform: scale(1.1);
+    background: #4c2585;
+}
+
+#featured .host-social img {
+    width: 18px;
+}
+
+
+
+@media (max-width: 576px) {
+
+    #featured .host-content {
+        width: 100%;
+    }
+        #featured {
+        padding: 120px 0px;
+    }
+
+    #featured .host-card {
+        width: 100%;          
+        max-width: 420px;     
+        margin: 0 auto;     
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #featured .host-social ul {
+        justify-content: center;
+    }
+}
+
