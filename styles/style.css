@@ -384,3 +384,121 @@ nav button {
         font-size: 12px;
     }
 }
+
+
+/* =========================
+   CHOOSE SECTION
+========================= */
+
+#choose {
+    background-color: #230E3D;
+    color: white;
+    padding: 120px 200px; /* FIGMA MATCHED */
+}
+
+#choose .section-content {
+    width: 78%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#choose .section-heading h1 {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* =========================
+   GRID
+========================= */
+
+#choose .grid-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* =========================
+   CARD BASE
+========================= */
+
+#choose .card {
+    background: #2C124F;
+    border-radius: 24px;
+    padding: 40px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+#choose .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+   IMAGE & TEXT SPACING
+========================= */
+
+#choose .card-img {
+    margin-bottom: 16px;
+}
+
+#choose .card-img img {
+    width: 40px;
+}
+
+#choose .card-heading h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+#choose .card-heading p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* =========================
+   GRID SPAN (FIGMA LOGIC)
+========================= */
+
+/* Premium Audio Quality */
+#choose .card:nth-child(1) {
+    grid-row: span 2;
+    padding: 107.5px 40px;
+}
+
+/* Exclusive Interviews */
+#choose .card:nth-child(4) {
+    grid-column: span 2;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 576px) {
+    #choose {
+        padding: 120px 24px; /* top-bottom same, side adjusted */
+    }
+
+    #choose .grid-card {
+        grid-template-columns: 1fr;
+    }
+
+    #choose .card {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+        padding: 40px;
+    }
+
+    #choose .card:nth-child(1) {
+        padding: 40px;
+    }
+
+    #choose .card:hover {
+        transform: scale(1.03); /* mobile e beshi zoom na */
+    }
+}
